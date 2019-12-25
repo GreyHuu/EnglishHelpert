@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entity.ReadingChooseEntity" table="reading_choose" schema="eng">
+        <id name="id" column="id"/>
+        <property name="readingChooseA" column="reading_choose_a"/>
+        <property name="readingChooseB" column="reading_choose_b"/>
+        <property name="readingChooseC" column="reading_choose_c"/>
+        <property name="readingChooseD" column="reading_choose_d"/>
+        <property name="result" column="result"/>
+    </class>
+</hibernate-mapping>

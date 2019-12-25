@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entity.CompositionEntity" table="composition" schema="eng">
+        <id name="cptId" column="cpt_id"/>
+        <property name="cptTitle" column="cpt_title"/>
+        <property name="cptDirection" column="cpt_direction"/>
+        <property name="cptCreateTime" column="cpt_create_time"/>
+        <property name="cptModel" column="cpt_model"/>
+        <property name="cptReference" column="cpt_reference"/>
+    </class>
+</hibernate-mapping>

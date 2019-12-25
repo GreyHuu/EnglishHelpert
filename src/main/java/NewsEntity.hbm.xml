@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entity.NewsEntity" table="news" schema="eng">
+        <id name="newId" column="newID"/>
+        <property name="news" column="news"/>
+        <property name="chinese" column="chinese"/>
+        <property name="title" column="title"/>
+        <property name="imgurl" column="imgurl"/>
+    </class>
+</hibernate-mapping>

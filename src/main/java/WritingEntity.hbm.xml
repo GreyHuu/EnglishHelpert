@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entity.WritingEntity" table="writing" schema="eng">
+        <id name="compositionId" column="compositionID"/>
+        <property name="composition" column="composition"/>
+        <property name="modle" column="modle"/>
+        <property name="anser" column="anser"/>
+        <property name="mark" column="mark"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="entity.WordEntity" table="word" schema="eng">
+        <id name="id" column="id"/>
+        <property name="englishWord" column="englishWord"/>
+        <property name="pa" column="pa"/>
+        <property name="chineseWord" column="chineseWord"/>
+        <property name="englishInstance1" column="englishInstance1"/>
+        <property name="chineseInstance1" column="chineseInstance1"/>
+        <property name="englishInstance2" column="englishInstance2"/>
+        <property name="chineseInstance2" column="chineseInstance2"/>
+        <property name="collect" column="collect"/>
+        <property name="pron" column="pron"/>
+    </class>
+</hibernate-mapping>

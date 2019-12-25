@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+
+
+    <session-factory>
+        <property name="connection.url">
+            jdbc:mysql://49.234.30.225:3308/eng?useSSL=false&amp;serverTimezone=UTC
+        </property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">123456</property>
+
+        <!-- dialect翻译为方言 Hibernate根据你选择的“方言”，针对每种数据库，作调整，如生成不同的SQL语句等 -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <!-- 设置默认的数据库连接池 -->
+        <property name="connection.pool_size">5</property>
+
+        <!-- 显示SQL -->
+        <property name="show_sql">false</property>
+
+        <!-- 格式化SQL -->
+        <property name="format_sql">true</property>
+
+        <!-- 根据schema更新数据表的工具 -->
+        <property name="hbm2ddl.auto">update</property>
+
+
+        <mapping class="entity.CompositionEntity"/>
+        <!--        <mapping resource="entity/CompositionEntity.hbm.xml"/>-->
+
+        <mapping class="entity.MyCompositionEntity"/>
+        <!--        <mapping resource="entity/MyCompositionEntity.hbm.xml"/>-->
+
+        <mapping class="entity.NewsEntity"/>
+        <!--        <mapping resource="entity/NewsEntity.hbm.xml"/>-->
+
+        <mapping class="entity.NewwordEntity"/>
+        <!--        <mapping resource="entity/NewwordEntity.hbm.xml"/>-->
+
+        <mapping class="entity.ReadingtestEntity"/>
+        <!--        <mapping resource="entity/ReadingChooseEntity.hbm.xml"/>-->
+
+        <mapping class="entity.RecordingEntity"/>
+        <!--        <mapping resource="entity/RecordingEntity.hbm.xml"/>-->
+
+        <mapping class="entity.UserEntity"/>
+        <!--        <mapping resource="entity/UserEntity.hbm.xml"/>-->
+
+        <mapping class="entity.WordEntity"/>
+        <!--        <mapping resource="entity/WordEntity.hbm.xml"/>-->
+
+        <mapping class="entity.WritingEntity"/>
+        <!--        <mapping resource="ReadingChooseEntity.hbm.xml"/>-->
+
+        <mapping class="entity.ReadingChooseEntity"/>
+        <!--        <mapping resource="ReadingQuestionEntity.hbm.xml"/>-->
+
+        <mapping class="entity.ReadingQuestionEntity"/>
+        <mapping class="entity.ReadingTotalEntity"/>
+        <!--        <mapping resource="entity/WritingEntity.hbm.xml"/>-->
+
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+        "http://struts.apache.org/dtds/struts-2.5.dtd">
+<struts>
+
+    <!-- 告知Struts2运行时使用Spring来创建对象 -->
+    <constant name="struts.objectFactory" value="spring"/>
+
+    <package name="user" extends="struts-default" namespace="/">
+        <action name="test" class="userAction" >
+            <result name="success">/demo.jsp</result>
+        </action>
+    </package>
+</struts>
